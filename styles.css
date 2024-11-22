@@ -40,9 +40,6 @@ body {
     text-align: center;
     padding: 4rem 2rem;
 }
-.hero h2 {
-    color: #fff;
-}
 .hero h2 span {
     color: #8a2be2;
 }
@@ -59,74 +56,28 @@ body {
     background: #7a22d1;
 }
 
-/* Section */
-.section {
-    padding: 2rem;
-    text-align: center;
-}
-.section h2 {
-    color: #8a2be2;
-    margin-bottom: 1rem;
-}
-
-/* Grid */
-.grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-top: 2rem;
-}
-.grid .card {
-    background: #111;
-    color: #fff;
-    padding: 1rem;
-    border: 2px solid #8a2be2;
-    text-decoration: none;
-    text-align: center;
-    transition: background 0.3s, color 0.3s;
-}
-.grid .card:hover {
-    background: #8a2be2;
-    color: #111;
-}
-
-/* Footer */
-.footer {
-    background: #111;
-    padding: 1rem;
-    text-align: center;
-    color: #fff;
-    font-size: 0.9rem;
-}
-.footer a {
-    color: #8a2be2;
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-
-/* Modal Styles */
+/* Modal */
 .modal {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
 }
 
 .modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    margin: 5% auto;
-    width: 80%;
-    max-height: 80%;
-    background: #111;
-    border: 2px solid #8a2be2;
-    border-radius: 10px;
+    border: none;
     overflow: hidden;
 }
 
@@ -140,10 +91,10 @@ body {
     position: absolute;
     top: 10px;
     right: 15px;
+    font-size: 30px;
     color: #fff;
-    font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
+    z-index: 1050;
     transition: color 0.3s;
 }
 
