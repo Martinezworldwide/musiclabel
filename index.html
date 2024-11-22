@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Music Label Network | Connect with all music websites in our network.">
     <title>Your Music Label</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -35,49 +35,29 @@
     <section id="network" class="section">
         <h2>Our Network</h2>
         <div class="grid">
-            <a href="https://example1.com" class="card">Website 1</a>
-            <a href="https://example2.com" class="card">Website 2</a>
-            <a href="https://example3.com" class="card">Website 3</a>
-            <a href="https://example4.com" class="card">Website 4</a>
+            <button class="modal-btn" data-src="https://engineeredsystems.wixsite.com/musiclabel">Music Label</button>
+            <button class="modal-btn" data-src="https://engineeredsystems.wixsite.com/music TV">Music TV</button>
+            <button class="modal-btn" data-src="https://martinezworldwide.github.io/matadiablocrystals">Mata Diablo</button>
+            <button class="modal-btn" data-src="https://example4.com">Website 4</button>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Our Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <iframe src="https://example.com/embed" frameborder="0"></iframe>
-                <p>Project Name</p>
-            </div>
-            <div class="project">
-                <iframe src="https://example2.com/embed" frameborder="0"></iframe>
-                <p>Another Project</p>
-            </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="modal-iframe" src="" frameborder="0"></iframe>
         </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="section">
-        <h2>Upcoming Events</h2>
-        <p>Stay tuned for our latest concerts and album launches!</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Your Music Label. All rights reserved.</p>
         <p>Powered by <a href="https://github.com">GitHub Pages</a></p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+
