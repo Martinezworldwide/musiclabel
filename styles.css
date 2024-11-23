@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background: #1a1a1a;
+    background: #1a1a1a; /* Carbon fiber black */
     color: #ffffff;
 }
 
@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 .header .logo h1 {
-    color: #8a2be2;
+    color: #8a2be2; /* Dark Violet */
     text-transform: uppercase;
 }
 .nav ul {
@@ -31,7 +31,7 @@ body {
     transition: color 0.3s;
 }
 .nav ul li a:hover {
-    color: #8a2be2;
+    color: #8a2be2; /* Dark Violet */
 }
 
 /* Hero Section */
@@ -40,8 +40,11 @@ body {
     text-align: center;
     padding: 4rem 2rem;
 }
+.hero h2 {
+    color: #fff;
+}
 .hero h2 span {
-    color: #8a2be2;
+    color: #8a2be2; /* Dark Violet */
 }
 .hero .cta-button {
     background: #8a2be2;
@@ -56,7 +59,7 @@ body {
     background: #7a22d1;
 }
 
-/* Modal */
+/* Modal TV */
 .modal {
     display: none;
     position: fixed;
@@ -65,26 +68,33 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
 }
 
-.modal-content {
-    width: 100%;
-    height: 100%;
+.modal-tv {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+    background: #000;
+    border: 5px solid #8a2be2; /* Dark Violet Border */
+    box-shadow: 0 0 20px #8a2be2, 0 0 50px #8a2be2;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    border: none;
-    overflow: hidden;
 }
 
-.modal-content iframe {
+.modal-tv iframe {
     width: 100%;
     height: 100%;
     border: none;
+    border-radius: 10px;
 }
 
 .close-btn {
@@ -99,5 +109,6 @@ body {
 }
 
 .close-btn:hover {
-    color: #8a2be2;
+    color: #8a2be2; /* Dark Violet */
 }
+
