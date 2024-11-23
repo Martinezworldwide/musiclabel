@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         iframe.src = ""; // Clear iframe source when closing
     });
 
-    // Close modal when clicking outside iframe
+    // Close modal when clicking outside modal-tv
     window.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.style.display = "none";
